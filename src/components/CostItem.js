@@ -1,25 +1,50 @@
-import './CostItem.css'
+import './CostItem.css';
+import CostDate from './CostDate';
 
-
-function CostItem (props){
-const month = props.date.toLocaleString('ru-RU', {month: "long"})
-const year = props.date.getFullYear()
-const day = props.date.toLocaleString('ru-RU', {day: "2-digit"})
-    return (
-    <div className = 'cost-item'>
-        <div>
-          <div>{month}</div>
-          <div>{year}</div>
-          <div>{day}</div>
-        </div>
-
-        <div className = 'cost-item__description'>
+function CostItem(props) {
+  return (
+    <div>
+      <div className='cost-item'>
+        <CostDate date={props.date} />
+        <div className='cost-item__description'>
           <h2>{props.description}</h2>
-          <div className = 'cost-item__price'>${props.amount}</div>
+          <div className='cost-item__price'>$ {props.amount}</div>
         </div>
+      </div>
     </div>
-    );
- 
+  );
 }
 
-export default CostItem
+export default CostItem;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import './CostItem.css'
+
+// function CostItem(props) {
+
+//   return (
+//     <div className="cost-item">
+//       <div>{props.date.toString()}</div>
+//       <div className="cost-item__description">
+//         <h2>{props.description}</h2>
+//         <div className="cost-item__price">$ {props.amount}</div>
+//       </div>
+
+//     </div>
+
+//   );
+// }
+
+// export default CostItem;
