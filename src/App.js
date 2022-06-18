@@ -24,9 +24,9 @@ function App() {
     <div>
       <h1>Приложение на REACT</h1>
       <p>You know I feel that this cource is really greate</p>
-      <CostItem date = {сosts[0].date} description = {сosts[0].description} amount = {сosts[0].amount}></CostItem>
-      <CostItem date = {сosts[1].date} description = {сosts[1].description} amount = {сosts[1].amount}></CostItem>
-      <CostItem date = {сosts[2].date} description = {сosts[2].description} amount = {сosts[2].amount}></CostItem>
+      <CostItem date = {сosts[0].date} description = {сosts[0].description} amount = {сosts[0].amount} />
+      <CostItem date = {сosts[1].date} description = {сosts[1].description} amount = {сosts[1].amount} />
+      <CostItem date = {сosts[2].date} description = {сosts[2].description} amount = {сosts[2].amount} />
     
     </div>
   );
