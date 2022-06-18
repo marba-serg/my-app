@@ -1,5 +1,4 @@
-import './CostItem.css'
-import './CostDate'
+import './CostItem.css';
 import CostDate from './CostDate';
 
 
